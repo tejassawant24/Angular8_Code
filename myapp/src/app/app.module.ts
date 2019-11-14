@@ -7,6 +7,9 @@ import { LaptopBrandComponent } from "./CODE/Assignment1/laptop.component";
 import { MobileBrandComponent } from "./CODE/Assignment1/mobile.component";
 import { Devices } from "./CODE/Assignment1/device";
 
+import { Table } from "./CODE/Assignment2/record";
+import { DataComponent } from "./CODE/Assignment2/data.component";
+
 import { Info } from "./CODE/Assignment3/malefemaleinfo.component";
 
 import { ParentComponent } from "./CODE/test/product/parent.component";
@@ -57,6 +60,7 @@ import { UserLoginComponent } from "./CODE/Routing(Tejas)/user-login/user-login.
     LaptopBrandComponent,
     MobileBrandComponent,
 
+    DataComponent,
     TestComponent,
     Info,
     HeartComponent,
@@ -94,7 +98,8 @@ import { UserLoginComponent } from "./CODE/Routing(Tejas)/user-login/user-login.
     RouterModule.forRoot(routes),
     HttpClientModule
   ],
-  providers: [Devices],
+  //Used in Dependency injection Concept
+  providers: [Devices, Table],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
